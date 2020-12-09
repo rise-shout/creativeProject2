@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Where is the ISS?</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+        <div class="container">
+          <img src="astro.png" style="width:10%;">
+
+          <h1 class='top-left'>Where in the </h1>
+
+          <h1 class='top-right'> world am I? </h1>
+
+          <h1 class='center'>See the International Space Station in real time!</h1>
+          
+        </div>
+        
+        <div id="iss-data">
+            <p>Longitude: <span id='longitude'></span>°</p>
+            <p>Latitude: <span id='latitude'></span>°</p>
+            <p>Altitude: <span id='altitude'></span> km</p>
+            <p>Velocity: <span id='velocity'></span> km/h</p>
+        </div>
+
+        <h1 class='center'>Where am I on the map? Look below to see!</h1>
+
+        <div id='map'></div>
+
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxme1eeEWcKYQJLTd6pEa2Torv1DPUrGg&callback=initMap"
+            async defer></script>
+        <script src="script.js"></script>
+
+
+    </div>
+
+      <p class = 'footer'> See my github <a href='https://github.com/BYU-CS-260-Winter-2020/lab-2-weather-app-rise-shout'>here</a></li> </p>
+    </div>
+
+</body>
+
+</html>
